@@ -13,3 +13,5 @@ if(MSVC)
 else()
   target_compile_options(hello PRIVATE -Wall -Wextra -Wpedantic)
 endif()
+
+install(TARGETS hello RUNTIME DESTINATION bin)
